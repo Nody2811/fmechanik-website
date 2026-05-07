@@ -2,10 +2,10 @@
   <title id="title">FMechanik Favicon Platzhalter</title>
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f26a1b" />
-      <stop offset="100%" stop-color="#c44d0f" />
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e3a8a" />
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#g)" />
-  <path d="M14 14h36v8H22v11h24v8H22v16h-8z" fill="#fff4e8" />
+  <path d="M14 14h36v8H22v11h24v8H22v16h-8z" fill="#eef4ff" />
 </svg>
