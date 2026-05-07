@@ -12,7 +12,7 @@ Landingpage fuer **FMechanik Meisterwerkstatt** (`www.fmechanik.de`) mit:
 - `index.html` Hauptseite
 - `rechtliches/index.html` Impressum + Datenschutz
 - `styles.css` Design und responsive Layout
-- `assets/logo.svg` Logo-Platzhalter (einfach ersetzen)
+- `assets/fmechanik_logo_only_transparent.png` Aktuelles Logo
 - `assets/favicon.svg` Favicon-Platzhalter (einfach ersetzen)
 - `assets/werkstatt-aussen.png` Werkstattfoto
 - `assets/reifen-service.png` Reifenservicefoto
@@ -24,7 +24,7 @@ Landingpage fuer **FMechanik Meisterwerkstatt** (`www.fmechanik.de`) mit:
 
 Nur diese Dateien austauschen:
 
-- `assets/logo.svg`
+- `assets/fmechanik_logo_only_transparent.png`
 - `assets/favicon.svg`
 
 Dateinamen gleich lassen, dann sind keine Codeaenderungen noetig.
