@@ -1,6 +1,6 @@
 # FMechanik Website
 
-Landingpage fuer **FMechanik Meisterwerkstatt** (`fmechanik.de`) mit:
+Landingpage fuer **FMechanik Meisterwerkstatt** (`www.fmechanik.de`) mit:
 
 - Deutscher Startseite
 - Kombinierter Seite fuer `Impressum & Datenschutz`
@@ -33,3 +33,11 @@ python -m http.server 8080
 ```
 
 Dann `http://localhost:8080` oeffnen.
+
+## DNS Setup (ohne Nameserver-Wechsel)
+
+1. In Cloudflare Pages nur `www.fmechanik.de` als Custom Domain verbinden.
+2. Beim aktuellen DNS-Provider:
+   - `CNAME` `www` -> `fmechanik-website.pages.dev`
+   - Domain-Weiterleitung (301) `fmechanik.de` -> `https://www.fmechanik.de`
+3. Bestehende Mail-Records (MX, SPF, DKIM, DMARC) unveraendert lassen.
