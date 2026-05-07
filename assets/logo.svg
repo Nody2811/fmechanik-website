@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">FMechanik Logo Platzhalter</title>
+  <desc id="desc">Ersetze diese Datei spaeter durch das finale Logo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f26a1b" />
+      <stop offset="100%" stop-color="#b8470d" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" rx="68" fill="url(#bg)" />
+  <path d="M62 72h176v42H111v45h110v41H111v70H62z" fill="#fff3e9" />
+  <circle cx="212" cy="211" r="38" fill="none" stroke="#fff3e9" stroke-width="14" />
+  <circle cx="212" cy="211" r="8" fill="#fff3e9" />
+</svg>
