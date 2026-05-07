@@ -37,6 +37,32 @@ python -m http.server 8080
 
 Dann `http://localhost:8080` oeffnen.
 
+## Git-basiertes Auto-Deploy (GitHub Actions -> Cloudflare Pages)
+
+Die Datei `.github/workflows/cloudflare-pages.yml` deployt automatisch:
+
+- `push` auf `main` -> Production Deploy
+- `pull_request` -> Preview Deploy
+
+Noetige GitHub Repository Secrets:
+
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`
+
+Cloudflare API Token (minimal):
+
+- Account permission: `Pages Write`
+- Account scope: dein Cloudflare Account
+
+Danach in GitHub:
+
+1. `Settings` -> `Secrets and variables` -> `Actions`
+2. Beide Secrets anlegen
+3. Commit nach `main` pushen
+4. Unter `Actions` den Workflow `Deploy to Cloudflare Pages` pruefen
+
+Damit ist ein voll git-getriebener Deploy-Flow aktiv, auch wenn die native Cloudflare-Git-Integration aktuell Fehler wirft.
+
 ## DNS Setup (ohne Nameserver-Wechsel)
 
 1. In Cloudflare Pages nur `www.fmechanik.de` als Custom Domain verbinden.
