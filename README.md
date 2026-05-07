@@ -14,6 +14,9 @@ Landingpage fuer **FMechanik Meisterwerkstatt** (`www.fmechanik.de`) mit:
 - `styles.css` Design und responsive Layout
 - `assets/logo.svg` Logo-Platzhalter (einfach ersetzen)
 - `assets/favicon.svg` Favicon-Platzhalter (einfach ersetzen)
+- `assets/werkstatt-aussen.png` Werkstattfoto
+- `assets/reifen-service.png` Reifenservicefoto
+- `assets/bremsen-service.png` Bremsenservicefoto
 - `_headers` Security Header fuer Cloudflare Pages
 - `_redirects` Weiterleitungen `/impressum` und `/datenschutz`
 

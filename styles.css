@@ -210,6 +210,47 @@ h3 {
   color: var(--text-soft);
 }
 
+.section-lead {
+  color: var(--text-soft);
+  margin: 0.2rem 0 1.1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gallery-card {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid color-mix(in oklab, var(--line) 65%, white 35%);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gallery-card-wide {
+  grid-column: span 2;
+}
+
+.gallery-card-wide img {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery-card figcaption {
+  padding: 0.7rem 0.9rem;
+  font-weight: 700;
+  color: #1f2228;
+}
+
 .split {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -351,8 +392,13 @@ a:focus-visible {
 @media (max-width: 860px) {
   .split,
   .cards,
+  .gallery,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-card-wide {
+    grid-column: auto;
   }
 
   .main-nav {
